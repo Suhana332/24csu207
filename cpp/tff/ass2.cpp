@@ -3,8 +3,6 @@
 #include <vector>
 
 using namespace std;
-
-//  Person class
 class Person {
 private:
     string name;
@@ -19,14 +17,10 @@ public:
         id = i;
         contact = c;
     }
-
-    // Getters
     string getName() { return name; }
     int getAge() { return age; }
     string getId() { return id; }
     string getContact() { return contact; }
-
-    // Setters 
     void setName(string n) {
         if(!n.empty()) name = n;
     }
@@ -92,7 +86,6 @@ public:
     }
 };
 
-// Grade management 
 class GradeBook {
 private:
     struct GradeEntry {
